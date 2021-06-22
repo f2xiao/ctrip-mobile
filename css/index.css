@@ -173,6 +173,7 @@ nav {
   margin: 4px 5px 8px;
   background: #fff;
   border-radius: 5px;
+  box-shadow: 1px 1px #cfcfcf;
 }
 .subnav-entry li {
   flex: 20%;
@@ -185,7 +186,7 @@ nav {
   font-size: 11px;
   color: #222;
 }
-.subnav-entry-icon::before {
+.subnav-entry li a [class^="subnav-entry-icon"]::before {
   content: "";
   display: block;
   width: 24px;
@@ -193,4 +194,97 @@ nav {
   margin-top: 4px;
   background: url(../images/subnav-bg.png) no-repeat 0 0;
   background-size: 24px;
+}
+.subnav-entry li a .subnav-entry-icon-icon2::before {
+  background-position: 0 -25px;
+}
+.subnav-entry li a .subnav-entry-icon-icon3::before {
+  background-position: 0 -54px;
+}
+.subnav-entry li a .subnav-entry-icon-icon4::before {
+  background-position: 0 -85px;
+}
+.subnav-entry li a .subnav-entry-icon-icon5::before {
+  background-position: 0 -115px;
+}
+.subnav-entry li a .subnav-entry-icon-icon6::before {
+  background-position: 0 -140px;
+}
+.subnav-entry li a .subnav-entry-icon-icon7::before {
+  background-position: 0 -170px;
+}
+.subnav-entry li a .subnav-entry-icon-icon8::before {
+  background-position: 0 -200px;
+}
+.subnav-entry li a .subnav-entry-icon-icon9::before {
+  background-position: 0 -225px;
+}
+.subnav-entry li a .subnav-entry-icon-icon10::before {
+  background-position: 0 -250px;
+}
+.sales-box {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-width: 1px 0;
+}
+.sales-hd {
+  position: relative;
+  height: 44px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.sales-hd h2 {
+  position: relative;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+.sales-hd h2::after {
+  position: absolute;
+  top: 15px;
+  left: 11px;
+  content: "";
+  display: block;
+  width: 73px;
+  height: 17px;
+  background: url(../images/hot.png) no-repeat 0 -19px;
+  background-size: 79px;
+}
+.sales-hd a:link,
+.sales-hd a:visited {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  font-size: 10px;
+  color: white;
+  padding: 5px 19px 5px 10px;
+  background: -webkit-linear-gradient(left, #ff4f65, #ff6bc6);
+  border-radius: 12px;
+}
+.sales-hd a::after {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-left: 4px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+.row a {
+  flex: 1;
+}
+.row a img {
+  width: 100%;
+}
+.row:nth-child(-n + 2) {
+  border-bottom: 1px solid #f2f2f2;
+}
+.row a:nth-child(1) {
+  border-right: 1px solid #f2f2f2;
 }
